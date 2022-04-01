@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas COVID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="flex">
+    <h1> Estadísticas del COVID19</h1>
+
+    <b>Fecha:</b> <input id="inputFecha" type="date"><br>
+    <b>País:</b>
+    <select id="selectPais">
+      <option value="Spain">España</option>
+      <option value="Germany">Alemania</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Chile">Chile</option>
+      <option value="Uruguay">Uruguay</option>
+
+    </select>
+    <button id="btnCargar">Cargar estadísticas</button>
+  </div>
+ 
+  <div> 
+    <ul>
+    <li>Contagiados hoy: <span id="today_confirmed"></span> </li>
+    <li>Muertes hoy: <span id="today_deaths"></span> </li>
+    <li>Pacientes hospitalizados con síntomas hoy: <span id="today_hospitalised_patients_with_symptoms"></span> </li>
+    <li>Pacientes en terapia intensiva hoy: <span id="today_intensive_care"></span> </li>
+    <li>Nuevos confirmados hoy: <span id="today_new_confirmed"></span> </li>
+    <li>Nuevas muertes hoy: <span id="today_new_deaths"></span></li>
+    <li>Nuevos pacientes hospitalizados con síntomas hoy: <span id="today_new_hospitalised_patients_with_symptoms"></span></li>
+    <li>Nuevos pacientes en terapia intensiva hoy: <span id="today_new_intensive_care"></span> </li>
+    <li>Nuevas casos abierto hoy: <span id="today_new_open_cases"></span> </li>
+    <li>Nuevos recuperados hoy: <span id="today_new_recovered"></span> </li>
+    <li>Total de nuevos pacientes hospitalizados hoy: <span id="today_new_total_hospitalised_patients"></span> </li>
+    </ul>
+    
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
