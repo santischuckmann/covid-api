@@ -10,7 +10,6 @@
 <body>
 
 <div class="container">
-  <div class="flex">
     <h1> Estadísticas del COVID19</h1>
 
     <b>Fecha:</b> <input id="inputFecha" type="date"><br>
@@ -25,9 +24,9 @@
 
     </select>
     <button id="btnCargar">Cargar estadísticas</button>
-  </div>
+
  
-  <div> 
+  <div class= "informacion"> 
     <ul>
     <li>Contagiados hoy: <span id="today_confirmed"></span> </li>
     <li>Muertes hoy: <span id="today_deaths"></span> </li>
@@ -41,9 +40,12 @@
     <li>Nuevos recuperados hoy: <span id="today_new_recovered"></span> </li>
     <li>Total de nuevos pacientes hospitalizados hoy: <span id="today_new_total_hospitalised_patients"></span> </li>
     </ul>
-    
-  </div>
 </div>
+</div>
+<footer class="footer">
+  <h4>Designed by Santiago Schuckmann</h4>
+  <span>To check other projects click <b><a href="https://santischuckmann.github.io/my-portfolio/">here</a></b>!</span>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
