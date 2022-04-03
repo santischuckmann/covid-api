@@ -20,7 +20,9 @@ async function clickBoton () {
 
   document.getElementById("today_confirmed").innerHTML = estadisticas.today_confirmed;
   document.getElementById("today_deaths").innerHTML = estadisticas.today_deaths;
-  document.getElementById("today_hospitalised_patients_with_symptoms").innerHTML = estadisticas.today_hospitalised_patients_with_symptoms;
+  document.getElementById("today_hospitalised_patients_with_symptoms").innerHTML = checkearDatos(estadisticas.today_hospitalised_patients_with_symptoms)
+  
+  // estadisticas.today_hospitalised_patients_with_symptoms;
   document.getElementById("today_intensive_care").innerHTML = estadisticas.today_intensive_care;
   document.getElementById("today_new_confirmed").innerHTML = estadisticas.today_new_confirmed;
   document.getElementById("today_new_deaths").innerHTML = estadisticas.today_new_deaths;
